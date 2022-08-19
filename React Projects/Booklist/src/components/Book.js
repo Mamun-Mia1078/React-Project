@@ -12,7 +12,12 @@ const UseReducer = () => {
   const [bookName, setBookName] = useState("");
 const handleSubmit = (e) => {
   e.preventDefault();
-  alert(bookName);
+  setBooks((prevState) => {
+    const newBook = {id: new Date().getTime().toString(), name: bookName }
+    
+    return [...prevState, newBook]
+    
+  })
 };
   
 
@@ -22,7 +27,7 @@ const handleSubmit = (e) => {
       <form onSubmit = {handleSubmit}> 
         <input type="text" value={bookName} 
         onChange = {(e) => {
-          setBookName(e.target.value);
+         setBookName(e.target.value);
         }}
         />
         <button type='submit' >Add your Book </button>
