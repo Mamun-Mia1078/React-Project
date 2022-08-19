@@ -1,0 +1,28 @@
+.head{
+    background-color: purple;
+    text-align: center;
+    color: white;
+
+}
+.title{
+    background-color: gray;
+}
+.card-title{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    padding: 10px;
+
+}
+.des{
+    color: black;
+    padding: 5px;
+    text-align: center;
+
+    
+}
+.contact{
+    font-weight: bold;
+ text-align: center;
+    color: black;
+}
